@@ -1,12 +1,10 @@
-from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 
 def index(request):
-    return render_to_response("index.html")
-    # return HttpResponse("Hello, world. You're at the polls index.")
+    return HttpResponse("Hello, world. You're at the polls index.")
 
 # this is all answers for all questions, should be stored in the Database.
 question_answer_map = {
